@@ -1,4 +1,4 @@
-#TinyBertInfernce API
+**TinyBertInfernce API**
 Idrak is using Tiny Bert Model for the classification of texts. TinyBert out perform the classical ML *(Random Forest, SGD, LightGBM, XGBoost, Linear Regression, and SVM)* as well as other Bert Varients *(MobileBert, Distilt Bert and Bert-Base-Uncased)* . Also, Tiny Bert is occupying 50 MB space on disk while other Bert Models are taking more than 400 MB space. 
 Moreover, We have initialy 4 datasets and 5 classifier for each dataset. 
 The detail of datasets are following
@@ -45,9 +45,16 @@ Mounting the Google Drive . You can ommit this line if you are running envoirnme
 
 ==> model/tinybert_report/datasetX_classifier_X_report.json
 
+**Instructions:**
 
 The constructor of IdrakTinyBertInfrence Requires 3 parameters.
-
+```
+from inference import IdrakTinyBertInference #Import IdrakTinyBertInference API
+dataset=1 #The dataset on which model trained
+classifier=3 #The Classifier
+model_dirpath='models' #Directory Where Model is stored
+itbf=IdrakTinyBertInference(classifier=classifier,dataset=dataset,drive_folder=model_dirpath) #Object of InfernceClass
+```
 1: `classifier`  expected input any number between 1 to 5. (This para donated the classifier intro, hello etc
 
 2: `dataset` expected input any number between1 to 4 
