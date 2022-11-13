@@ -1,3 +1,4 @@
+(The Notebook contains the experiment details of Inference API)
 **TinyBertInfernce API**
 Idrak is using Tiny Bert Model for the classification of texts. TinyBert out perform the classical ML *(Random Forest, SGD, LightGBM, XGBoost, Linear Regression, and SVM)* as well as other Bert Varients *(MobileBert, Distilt Bert and Bert-Base-Uncased)* . Also, Tiny Bert is occupying 50 MB space on disk while other Bert Models are taking more than 400 MB space. 
 Moreover, We have initialy 4 datasets and 5 classifier for each dataset. 
