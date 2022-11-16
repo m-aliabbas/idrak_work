@@ -1,0 +1,99 @@
+,Unnamed: 0,class,cleaned_text,class_labels,clean,y_pred
+471,967,2,amy listen my balls,dnc,amy listen balls,5
+480,5799,2,i m doing great  it is a company phone ,dnc,great company phone,4
+320,6315,5,um hello ,other,um hello,4
+472,4708,5,what can i do for you,other,,4
+591,4564,6,lazy,sorry_greeting,lazy,5
+487,4695,4,hello what do you want,greetings,hello want,5
+615,886,5,okay what kind of puppy are you looking for,other,okay kind puppy looking,4
+294,706,5,well thats me,other,well thats,4
+4,1072,5,if i wanted to know about it i would have called you,other,wanted know would called,2
+315,914,4,i m blessed,greetings,blessed,5
+303,321,5,i m not doing,other,,6
+224,3546,5,well i am just old,other,well old,4
+503,1318,6,i feel like i m about to die,sorry_greeting,feel like die,5
+362,701,5,have have a good day thanks,other,good day thanks,4
+388,2928,2,i m military,dnc,military,5
+153,6704,2,hello yes thankyou very much for the call mumbling i don t i cannot mumbling take this conversation mumbling thankyou ,dnc,hello yes thankyou much call mumbling mumbling take conversation mumbling thankyou,5
+2,261,5,i can t understand you talk up,other,understand talk,7
+205,2915,6,actually we are not feeling good we are in hospital right now,sorry_greeting,actually feeling good hospital right,1
+583,4393,5,hang up,other,hang,0
+610,3870,5,oh hello,other,oh hello,4
+285,1716,4,hello who are you amy,greetings,hello amy,5
+215,328,5,gotten better concedent,other,gotten better concedent,4
+62,4195,5,hi pretty,other,hi pretty,4
+170,1517,2,oh get out of my life,dnc,oh get life,5
+605,7211,4,too good,greetings,good,6
+249,3941,5,hello,other,hello,4
+364,5756,4,yeah i m good  how you get my number?,greetings,yeah good get number,3
+293,1709,2,okay hang up on me,dnc,okay hang,4
+137,2616,2,representatives,dnc,representatives,5
+383,3418,6,lazy,sorry_greeting,lazy,5
+572,5479,1,i m doing just fine but i have no time to talk,busy,fine time talk,4
+417,299,1,yeah but i m on my way up to do i have a doctor s appointment,busy,yeah way doctor appointment,5
+582,1557,2,what can i do for you amy this is have heart problems deal,dnc,amy heart problems deal,5
+202,2844,6,well i m not that great really whats up,sorry_greeting,well great really whats,3
+314,1161,4,hello this is ross,greetings,hello ross,2
+558,6756,5,how are you i am dead,other,dead,3
+359,5763,1,okay mam i m fit you know i m in restroom don t you?,busy,okay mam fit know restroom,4
+49,1073,5,are you threatning?,other,threatning,3
+622,1295,6,i m feeling little cold today,sorry_greeting,feeling little cold today,7
+511,3435,1,can t listen to it now because i m waiting for somebody to pick me up and i haven t finished yet getting dressed can you call me tomorrow,busy,listen waiting somebody pick finished yet getting dressed call tomorrow,2
+148,5490,1,i m doing fine as a me and try to take that of i don t have time to talk,busy,fine try take time talk,2
+498,1342,5,i was doing fine until you called,other,fine called,4
+3,4268,6,i am dying how are you doing,sorry_greeting,dying,3
+579,761,4,hello a representative,greetings,hello representative,2
+87,3299,3,i m doing fine you,greetback,fine,4
+245,5866,5,i m really old and tired i wish i had some some sort of insurance,other,really old tired wish sort insurance,2
+481,2994,5,that fine,other,fine,4
+317,60,5,i am doing fine what do you need and want,other,fine need want,4
+577,2212,6,i am burning,sorry_greeting,burning,5
+298,2186,4,i am fabulous,greetings,fabulous,5
+440,1894,3,i m okay whats going on,greetback,okay whats going,4
+493,109,2,amy oh fuck my kuk  mumbling,dnc,amy oh fuck kuk mumbling,5
+256,5129,5,this call,other,call,2
+458,5740,2,i m fucking fine,dnc,fucking fine,4
+129,4987,4,well so so,greetings,well,5
+343,43,5,good bye ,other,good bye,4
+38,2625,4,not real bad,greetings,real bad,6
+436,2692,4,oh the same as i was yesterday when you called just fine ,greetings,oh yesterday called fine,2
+155,535,6,oh i m doing terrible i just had a big scar on my head and i taking my prescription from my doctor and the pharmacy is giving me a hard time can you fix that,sorry_greeting,oh terrible big scar head taking prescription doctor pharmacy giving hard time fix,2
+122,3907,2,bastard,dnc,bastard,5
+392,2451,2,amy you may have the wrong number,dnc,amy may wrong number,0
+434,857,2,don t in a abortion clinic mumble,dnc,abortion clinic mumble,5
+60,1307,2,my birthday is damn eighty six years old doing very well i m alive,dnc,birthday damn eighty six years old well alive,4
+330,541,5,oh i dont think i called you,other,oh dont think called,2
+325,3058,5,and we have no money is here now,other,money,2
+15,3050,2,just fine until you called,dnc,fine called,4
+102,4806,6,not very well how about you,sorry_greeting,well,3
+488,3479,4,thank you for calling have a good day bye,greetings,thank calling good day bye,5
+104,908,5,now right yeah,other,right yeah,1
+220,5515,6,oh too bad,sorry_greeting,oh bad,4
+145,3911,2,can i get a chick i need a chick,dnc,get chick need chick,5
+175,1030,5,well ah,other,well ah,4
+391,5277,5,this is jones,other,jones,2
+48,937,5,don t remember asking,other,remember asking,2
+377,3597,4,hello american citizen care amy,greetings,hello american citizen care amy,5
+492,3198,2,i m not on fixed income i m not on social security please remove my number,dnc,fixed income social security please remove number,5
+422,2810,5,hello ei,other,hello ei,4
+135,1771,6,i m sick what can i do for you,sorry_greeting,sick,4
+459,1948,5,nah i don t plan on dying any time soon so am good,other,nah plan dying time soon good,4
+538,6508,5,hello hello ,other,hello hello,4
+82,7031,5,i don t ,other,,2
+105,1550,5,i m still working nomad sixty five year,other,still working nomad sixty five year,4
+7,138,5,what can i do for you?,other,,4
+63,3553,1,no am just listening to chapter mathew i would you take,busy,listening chapter mathew would take,2
+18,2873,6,now good,sorry_greeting,good,4
+335,6734,1,i am doing fine but honey i m busy ,busy,fine honey busy,4
+616,2750,5,i m good thankyou anyways,other,good thankyou anyways,4
+549,1851,2,do i sound that fucking old?,dnc,sound fucking old,5
+584,1274,5,well actually i know plenty about it cause i m raise your investment advisor ran a certified financial planner so,other,well actually know plenty cause raise investment advisor ran certified financial planner,4
+420,741,5,okay i m in germany can i help you,other,okay germany help,4
+113,5636,2,i m done got one call from senior citizen,dnc,done got one call senior citizen,5
+85,1684,1,hold and let me talk to my daughter,busy,hold let talk daughter,5
+5,4121,2,i m just peachy,dnc,peachy,4
+331,6061,4,well  bye bye,greetings,well bye bye,5
+31,2676,5,i m not,other,,6
+385,1617,5,know more about what?,other,know,0
+67,2168,6,i am not i am sick what can i help you with today?,sorry_greeting,sick help today,5
+69,6593,6,yeah i m sick what do you need ,sorry_greeting,yeah sick need,5

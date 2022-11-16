@@ -1,0 +1,101 @@
+,Unnamed: 0,class,cleaned_text,class_labels,clean,y_pred
+376,571,5,i m sorry,other,sorry,6
+545,2186,4,i am fabulous,greetings,fabulous,5
+136,4536,4,i m still alive so that s a blessing i suppose,greetings,still alive blessing suppose,5
+139,4290,4,i m happy,greetings,happy,5
+31,4280,6,i m half dead about to die any minute,sorry_greeting,half dead die minute,5
+246,25,2,i am looking for a lover,dnc,looking lover,5
+577,1852,3,terrible sup,greetback,terrible sup,6
+158,1800,2,i m good why are you calling me this time at night,dnc,good calling time night,5
+206,1364,4,oh i m fine let me turn myy volume up a lil  bit i can barely hear you,greetings,oh fine let turn myy volume lil bit barely hear,5
+419,6854,6,nothing good,sorry_greeting,nothing good,4
+239,761,4,hello a representative,greetings,hello representative,5
+627,6709,5,hello ,other,hello,4
+533,1161,4,hello this is ross,greetings,hello ross,5
+19,2917,6,hi amy hi hi not too good amy hi,sorry_greeting,hi amy hi hi good amy hi,5
+63,3731,4,not bad,greetings,bad,6
+283,1431,2,same as i was yesterday,dnc,yesterday,5
+285,1275,5,doing the same as you are ma am same as you,other,,2
+3,5564,4,how am i doing today oh i feel good why and what you want ?,greetings,today oh feel good want,5
+434,7031,5,i don t ,other,,2
+591,1038,2,i ve been murdered by mom,dnc,murdered mom,5
+525,1082,1,no thank you i have to move out,busy,thank move,5
+614,5656,5,you people need to get a life,other,people need get life,2
+406,938,5,beep,other,beep,0
+378,6593,6,yeah i m sick what do you need ,sorry_greeting,yeah sick need,5
+189,3541,1,i m doing good i m taking a shower,busy,good taking shower,4
+531,1307,2,my birthday is damn eighty six years old doing very well i m alive,dnc,birthday damn eighty six years old well alive,4
+423,932,4,amazing,greetings,amazing,5
+87,535,6,oh i m doing terrible i just had a big scar on my head and i taking my prescription from my doctor and the pharmacy is giving me a hard time can you fix that,sorry_greeting,oh terrible big scar head taking prescription doctor pharmacy giving hard time fix,1
+54,1912,1,maybe another day,busy,maybe another day,5
+259,3105,4,ah fine thank you and where do you from who do you from,greetings,ah fine thank,5
+299,1219,2,no hang up,dnc,hang,0
+583,1668,5,i m sorry you re calling to me,other,sorry calling,2
+270,5006,4,normal,greetings,normal,5
+233,2133,4,have a good day,greetings,good day,5
+56,6185,4,good afternoon this is jack this is jack,greetings,good afternoon jack jack,5
+190,60,5,i am doing fine what do you need and want,other,fine need want,4
+619,202,5,read the bible john three sixteen,other,read bible john three sixteen,2
+333,5818,4,hello  hello,greetings,hello hello,5
+213,3444,5,okay what do you have,other,okay,4
+52,5756,4,yeah i m good  how you get my number?,greetings,yeah good get number,5
+609,5988,2,i d like to speak to a representative,dnc,like speak representative,5
+473,2515,4,hello who is this hello hello,greetings,hello hello hello,5
+382,1318,6,i feel like i m about to die,sorry_greeting,feel like die,5
+474,4648,4,i m good who do you want to speak to,greetings,good want speak,5
+165,2264,1,mam i am sorry i can t talk,busy,mam sorry talk,5
+230,2863,1,i am in hospital,busy,hospital,5
+198,4272,1,i m doing okay amy i m in the mid of doing something and doing some work so what do you need,busy,okay amy mid something work need,4
+370,1963,2,no they call every day and i am not interested thank you,dnc,call every day interested thank,5
+90,3886,6,i m sorry who is this,sorry_greeting,sorry,5
+306,5355,5,what s your name,other,name,6
+371,6192,6,not real good,sorry_greeting,real good,4
+224,914,4,i m blessed,greetings,blessed,5
+618,4396,3,good andd you,greetback,good andd,4
+592,3546,5,well i am just old,other,well old,4
+103,4947,4,i m doing great but you called,greetings,great called,2
+262,2953,5,i m not dead,other,dead,6
+241,227,1,no i sure wouldn t i m on a call that county attorney on you anyway,busy,sure call county attorney anyway,5
+151,2111,5,are you ,other,,3
+284,3509,4,hello how can i help you,greetings,hello help,5
+39,6061,4,well  bye bye,greetings,well bye bye,5
+596,2285,4,i am fine  yes how you want it now,greetings,fine yes want,3
+102,2534,5,you,other,,3
+129,3198,2,i m not on fixed income i m not on social security please remove my number,dnc,fixed income social security please remove number,5
+427,4759,6,right now i don t feel too good,sorry_greeting,right feel good,1
+404,3502,2,i m gay,dnc,gay,5
+327,3548,4,i m doing fine you with whom,greetings,fine,3
+389,2502,2,i don t know what the hell you re talking about am ninety years old,dnc,know hell talking ninety years old,5
+598,4105,3,pretty good you,greetback,pretty good,4
+10,2962,2,no we know about that s probably about ten percent this call is so we heard all of,dnc,know probably ten percent call heard,5
+548,741,5,okay i m in germany can i help you,other,okay germany help,4
+234,4409,2,hell  what is this,dnc,hell,5
+451,3553,1,no am just listening to chapter mathew i would you take,busy,listening chapter mathew would take,5
+231,2235,5,imagine calling mumble,other,imagine calling mumble,2
+433,2978,5,oh spam risk,other,oh spam risk,2
+362,2904,6,not very well people keep calling me on the phone,sorry_greeting,well people keep calling phone,2
+223,1387,1,let me call you back who did you say you were amy?,busy,let call back say amy,5
+463,1496,5,this is amy,other,amy,0
+188,4605,6,i m doing terrific,sorry_greeting,terrific,4
+297,2410,4,alright but you call what you want,greetings,alright call want,5
+361,408,2,i dont know mam i know one thing you people are going crazy,dnc,dont know mam know one thing people going crazy,7
+429,3289,3,yeah whatsup,greetback,yeah whatsup,4
+581,1684,1,hold and let me talk to my daughter,busy,hold let talk daughter,5
+446,3425,2,i m doing good i m taking a shit,dnc,good taking shit,4
+208,1568,6,well feeling alone,sorry_greeting,well feeling alone,4
+298,1344,2,can i speak to representative,dnc,speak representative,5
+122,1415,2,oh same as i was about twenty minutes ago when you called,dnc,oh twenty minutes ago called,5
+289,3112,5,mumbling not easier right now,other,mumbling easier right,1
+440,5908,4,hello hello,greetings,hello hello,5
+511,357,4,marvellous,greetings,marvellous,5
+301,3154,6,not feeling well how about you,sorry_greeting,feeling well,3
+332,862,2,i picked the call amy yesterday and today i m busy,dnc,picked call amy yesterday today busy,1
+516,1893,5,i will not be me,other,,2
+557,5647,2,well i was doing great until i ve a fake and i was feeling huh? ,dnc,well great fake feeling huh,4
+112,5110,2,i m damn too old for it,dnc,damn old,5
+588,5520,4,okay why you re calling,greetings,okay calling,5
+458,4098,6,not very well people keep calling me on my phone,sorry_greeting,well people keep calling phone,2
+529,5832,4,reasonable,greetings,reasonable,5
+530,939,4,i m spectacular,greetings,spectacular,5
+418,3902,4,i m doing fine someone called me the other day,greetings,fine someone called day,2
+437,3427,4,i m fine who do you want to speak with me,greetings,fine want speak,5

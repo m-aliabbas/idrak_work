@@ -1,0 +1,196 @@
+,Unnamed: 0,class,cleaned_text,class_labels,clean,y_pred
+91,2553,4,i am dooing okay,greetings,dooing okay,3
+139,4290,4,i m happy,greetings,happy,5
+317,2927,6,really bad,sorry_greeting,really bad,4
+265,5124,3,oh no good how are you,greetback,oh good,4
+257,4749,3,fine how about you how are you doing that s more important,greetback,fine important,4
+499,4437,3,i m okay how about you,greetback,okay,4
+312,559,5,what s your last name amy,other,last name amy,2
+612,6991,4,i am doing okay anny can u hear me,greetings,okay anny u hear,5
+239,761,4,hello a representative,greetings,hello representative,2
+299,1219,2,no hang up,dnc,hang,0
+295,2127,4,i am doing good but i don t think you could help me honey,greetings,good think could help honey,5
+577,1852,3,terrible sup,greetback,terrible sup,6
+306,5355,5,what s your name,other,name,6
+302,1645,3,i m doing good how about you,greetback,good,4
+533,1161,4,hello this is ross,greetings,hello ross,5
+1,2366,2,i think it s really actually kind of disgusting that you re trying to take advantage of the old people and get them that pay you money for this mumble if you don t call me about it again,dnc,think really actually kind disgusting trying take advantage old people get pay money mumble call,5
+495,5828,5,yeah what can i help you with?,other,yeah help,4
+140,1965,3,feeling good how are you doing amy,greetback,feeling good amy,6
+592,3546,5,well i am just old,other,well old,4
+289,3112,5,mumbling not easier right now,other,mumbling easier right,1
+543,6073,3,alright how are you,greetback,alright,4
+604,1094,3,i m doing well thank you and yourself,greetback,well thank,4
+64,1527,1,not now,busy,,5
+121,4027,3,doing fine mam how about you,greetback,fine mam,4
+206,1364,4,oh i m fine let me turn myy volume up a lil  bit i can barely hear you,greetings,oh fine let turn myy volume lil bit barely hear,5
+186,4534,3,pretty good amy how about yourself,greetback,pretty good amy,4
+502,1815,4,well not too bad,greetings,well bad,6
+369,2845,5,what maybe even is is this is raj worthy again okay,other,maybe even raj worthy okay,4
+39,6061,4,well  bye bye,greetings,well bye bye,5
+483,2650,4,i m fine thank you today,greetings,fine thank today,3
+85,3828,5,i have eternalized with my jesus christ sorry,other,eternalized jesus christ sorry,6
+616,3031,2,i am doing very well but i would like to inform you that you ve called a business and i don t think that is very appropriate thank you you have a wonderful day bye,dnc,well would like inform called business think appropriate thank wonderful day bye,4
+196,6765,5,no answer,other,answer,0
+266,2827,4,i am fine ,greetings,fine,3
+427,4759,6,right now i don t feel too good,sorry_greeting,right feel good,4
+458,4098,6,not very well people keep calling me on my phone,sorry_greeting,well people keep calling phone,2
+524,5754,3,good  how are you?,greetback,good,4
+362,2904,6,not very well people keep calling me on the phone,sorry_greeting,well people keep calling phone,2
+622,4344,6,uh not so good,sorry_greeting,uh good,4
+464,3100,5,do you know what time it is,other,know time,1
+125,121,5,i m twenty five years old,other,twenty five years old,4
+614,5656,5,you people need to get a life,other,people need get life,2
+133,630,3,i m doing terrible amy how you doing you have a nice day amy,greetback,terrible amy nice day amy,6
+37,4942,3,how you doing,greetback,,5
+371,6192,6,not real good,sorry_greeting,real good,4
+423,932,4,amazing,greetings,amazing,5
+399,6735,6,no good,sorry_greeting,good,4
+272,5691,3,i m doing fine thank you  how are you?,greetback,fine thank,4
+530,939,4,i m spectacular,greetings,spectacular,5
+450,4715,4,i m okay can you hear,greetings,okay hear,5
+466,4643,3,how good are you,greetback,good,4
+143,4337,4,i m fine ma am,greetings,fine,3
+469,4100,3,yeah i m doing good how you doing,greetback,yeah good,4
+244,2692,4,oh the same as i was yesterday when you called just fine ,greetings,oh yesterday called fine,2
+24,3489,2,i had a call from this before and i ninety three years old and i m not able to give any of this insurance so thankyou for calling,dnc,call ninety three years old able give insurance thankyou calling,5
+615,2297,4,i am doing the best i can dear,greetings,best dear,5
+545,2186,4,i am fabulous,greetings,fabulous,5
+98,334,5,do you believe in god,other,believe god,4
+418,3902,4,i m doing fine someone called me the other day,greetings,fine someone called day,2
+449,753,5,hello who s this spekaing hello,other,hello spekaing hello,4
+429,3289,3,yeah whatsup,greetback,yeah whatsup,4
+438,4553,4,fine what can i do for you,greetings,fine,3
+547,3288,4,amy from american senior citizens care alright,greetings,amy american senior citizens care alright,0
+475,4680,6,not too well thank you,sorry_greeting,well thank,4
+89,6005,6,not very well,sorry_greeting,well,4
+9,4830,3,okay mam how about you,greetback,okay mam,4
+48,7173,4,i am doing fine anny u r calling 3 tim  today,greetings,fine anny u r calling tim today,3
+95,7093,3,doing good anny how are u,greetback,good anny u,6
+512,7179,4,fine anny keep talking,greetings,fine anny keep talking,2
+19,2917,6,hi amy hi hi not too good amy hi,sorry_greeting,hi amy hi hi good amy hi,5
+554,4329,3,pretty good how you doing,greetback,pretty good,4
+358,3781,2,piss off,dnc,piss,5
+531,1307,2,my birthday is damn eighty six years old doing very well i m alive,dnc,birthday damn eighty six years old well alive,5
+366,2937,3,i m good how are you doing,greetback,good,4
+352,3571,3,very well how are you,greetback,well,4
+382,1318,6,i feel like i m about to die,sorry_greeting,feel like die,5
+76,5612,1,oh kinda go to bed,busy,oh kinda go bed,5
+254,2472,3,i am doing okay and you,greetback,okay,4
+31,4280,6,i m half dead about to die any minute,sorry_greeting,half dead die minute,5
+526,4696,3,okay good how about you,greetback,okay good,4
+625,348,3,oh good how about you,greetback,oh good,4
+183,1892,5,medicare what,other,medicare,4
+563,1777,3,good and how are you,greetback,good,4
+511,357,4,marvellous,greetings,marvellous,5
+62,2994,3,i am doing pretty good amy how are you,greetback,pretty good amy,4
+255,2067,6,not good at all ,sorry_greeting,good,4
+330,6242,6,hello hm not good ,sorry_greeting,hello hm good,4
+275,5766,4,i m doing fine ,greetings,fine,3
+318,1179,4,doing okay what do you want,greetings,okay want,5
+122,1415,2,oh same as i was about twenty minutes ago when you called,dnc,oh twenty minutes ago called,5
+560,237,4,i m feeling good mam,greetings,feeling good mam,6
+10,2962,2,no we know about that s probably about ten percent this call is so we heard all of,dnc,know probably ten percent call heard,5
+556,2310,3,i guess i am good enough how are you doing ,greetback,guess good enough,4
+451,3553,1,no am just listening to chapter mathew i would you take,busy,listening chapter mathew would take,5
+346,4765,6,not good at all,sorry_greeting,good,4
+230,2863,1,i am in hospital,busy,hospital,5
+443,2261,3,oh i am just great how are you doing,greetback,oh great,4
+529,5832,4,reasonable,greetings,reasonable,5
+548,741,5,okay i m in germany can i help you,other,okay germany help,4
+281,3526,6,not doing alright,sorry_greeting,alright,4
+218,6181,6,not well thank you,sorry_greeting,well thank,4
+29,758,2,i m doing fine don t call me no more,dnc,fine call,4
+559,5003,4,oh pretty good,greetings,oh pretty good,3
+392,2169,5,sorry what?,other,sorry,6
+593,5125,3,alright how you doing,greetback,alright,4
+153,6133,4,i m doing fine amy,greetings,fine amy,3
+282,377,3,right right doing good how about you,greetback,right right good,1
+188,4605,6,i m doing terrific,sorry_greeting,terrific,4
+130,4819,3,i m okay how you doing,greetback,okay,4
+278,293,4,oh i m doing pretty good,greetings,oh pretty good,3
+77,5618,4,i m just am doing really goood amy i just finished jack the owl,greetings,really goood amy finished jack owl,5
+252,4912,5,who s calling,other,calling,2
+211,6024,3,oh i m doing very well how are you?,greetback,oh well,4
+389,2502,2,i don t know what the hell you re talking about am ninety years old,dnc,know hell talking ninety years old,5
+298,1344,2,can i speak to representative,dnc,speak representative,7
+627,6709,5,hello ,other,hello,4
+207,1015,6,not so good  mumble,sorry_greeting,good mumble,4
+165,2264,1,mam i am sorry i can t talk,busy,mam sorry talk,5
+433,2978,5,oh spam risk,other,oh spam risk,2
+609,5988,2,i d like to speak to a representative,dnc,like speak representative,5
+583,1668,5,i m sorry you re calling to me,other,sorry calling,2
+313,7193,5,no answer,other,answer,0
+260,31,5,what am sorry,other,sorry,6
+75,5751,3,alright  you?,greetback,alright,4
+137,6460,6,not very good no thankyou ,sorry_greeting,good thankyou,5
+338,3864,3,i m well thank you how are you,greetback,well thank,4
+283,1431,2,same as i was yesterday,dnc,yesterday,4
+287,532,5,i guess i wouldn t mumble,other,guess mumble,4
+277,862,2,yeah i don t need any right now if you remove my number that s fine for me,dnc,yeah need right remove number fine,1
+92,4148,3,good amy how you doing,greetback,good amy,4
+63,3731,4,not bad,greetings,bad,6
+406,938,5,beep,other,beep,0
+435,5800,4,i m doing just fine,greetings,fine,3
+361,408,2,i dont know mam i know one thing you people are going crazy,dnc,dont know mam know one thing people going crazy,5
+6,4170,2,do not call back,dnc,call back,1
+598,4105,3,pretty good you,greetback,pretty good,4
+376,571,5,i m sorry,other,sorry,6
+618,4396,3,good andd you,greetback,good andd,4
+525,1082,1,no thank you i have to move out,busy,thank move,5
+81,5619,3,good good how are you,greetback,good good,4
+536,5376,4,we re doing fine,greetings,fine,3
+453,1787,3,ah so far so good and you,greetback,ah far good,4
+250,1546,1,no not today i m gonna get some,busy,today gon na get,5
+368,841,5,i m in covid right now and i can t go no where you understand,other,covid right go understand,1
+541,1793,3,i m good amy how are you,greetback,good amy,4
+221,4087,3,i m doing good how you doing,greetback,good,4
+558,2393,7,fine me no english,spanish,fine english,4
+468,1495,2,i m awesome bullshit,dnc,awesome bullshit,4
+129,3198,2,i m not on fixed income i m not on social security please remove my number,dnc,fixed income social security please remove number,5
+270,5006,4,normal,greetings,normal,5
+576,3700,3,fine and you how may i help you,greetback,fine may help,4
+580,138,2,no you have never come up came over the scam ,dnc,never come came scam,5
+408,3844,3,oh i m not fine and you,greetback,oh fine,4
+535,1190,5,what s what s there to learn about it,other,learn,0
+347,1314,4,i m doing good mumbling,greetings,good mumbling,6
+328,6200,3,how about you,greetback,,5
+461,3334,1,no not today dear thankyou so much bye bye,busy,today dear thankyou much bye bye,5
+591,1038,2,i ve been murdered by mom,dnc,murdered mom,5
+155,2947,6,oh bad bad bad and you,sorry_greeting,oh bad bad bad,4
+557,5647,2,well i was doing great until i ve a fake and i was feeling huh? ,dnc,well great fake feeling huh,6
+126,5129,5,this call,other,call,2
+174,197,3,how are you doing?,greetback,,5
+162,4066,6,i m not doing good today i ve been to the doctor i don t feel like talking bye,sorry_greeting,good today doctor feel like talking bye,1
+84,152,2,now i have insurance and don t call back,dnc,insurance call back,1
+496,3254,2,no thankyou am in insurance bussiness and i would apprecaite if you don t call it s the third or fourth time  i m in the bussiness don t call me again,dnc,thankyou insurance bussiness would apprecaite call third fourth time bussiness call,5
+35,3930,3,i m wonderful how are you,greetback,wonderful,4
+124,1246,5,i m here dying,other,dying,6
+542,5821,4,i m okay what do you want?,greetings,okay want,5
+213,3444,5,okay what do you have,other,okay,4
+11,1167,4,oh hi amy i m okay,greetings,oh hi amy okay,5
+226,3624,3,hi great how are you,greetback,hi great,4
+350,1038,2,no you call me three four time and i say it no i m already have what i need thankyou for calling bye,dnc,call three four time say already need thankyou calling bye,5
+485,1609,3,i feel good how are you,greetback,feel good,4
+584,3653,4,very well probably,greetings,well probably,6
+116,3352,3,i m fine how are you mam,greetback,fine mam,4
+419,6854,6,nothing good,sorry_greeting,nothing good,4
+246,25,2,i am looking for a lover,dnc,looking lover,5
+233,2133,4,have a good day,greetings,good day,5
+340,4089,5,calling where,other,calling,2
+581,1684,1,hold and let me talk to my daughter,busy,hold let talk daughter,5
+332,862,2,i picked the call amy yesterday and today i m busy,dnc,picked call amy yesterday today busy,1
+459,1734,3,oh i couldnt be better amy how are you,greetback,oh couldnt better amy,4
+263,1566,0,more,answering_machine,,5
+238,3376,3,amy miss how are you,greetback,amy miss,5
+364,706,4,i m fine hon,greetings,fine hon,3
+621,2383,4,i am doing just fine,greetings,fine,3
+404,3502,2,i m gay,dnc,gay,5
+515,2708,3,oh good how are you ,greetback,oh good,4
+327,3548,4,i m doing fine you with whom,greetings,fine,3
+460,1855,2,i dont need you re calling me over past 6 ,dnc,dont need calling past,5
+403,3295,5,tell me what you calling for,other,tell calling,2
+504,3164,2,no i would like to be removed,dnc,would like removed,0
+87,535,6,oh i m doing terrible i just had a big scar on my head and i taking my prescription from my doctor and the pharmacy is giving me a hard time can you fix that,sorry_greeting,oh terrible big scar head taking prescription doctor pharmacy giving hard time fix,1
+219,3054,4,just fine,greetings,fine,3
+442,6842,4,i am fine,greetings,fine,3
