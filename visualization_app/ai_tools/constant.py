@@ -10,5 +10,5 @@ classifiers_meta={'classifier_1':{'labels': classifier_1_labelmaps,'NUM_CLASSES'
                   'classifier_4':{'labels': classifier_4_labelmaps,'NUM_CLASSES':5},
                   'classifier_5':{'labels': classifier_5_labelmaps,'NUM_CLASSES':5}
                   }
-dataset_names={'Human Label':'dataset1','Current Transcripter':'dataset2','Beam':'dataset3','Greedy':'dataset4'}
-classifier_names={'Hello':'classifier_1','Intro':'classifier_2','Pitch':'classifier_3','Yes/No with Age Data':'classifier_4','Yes/No without Age Data':'classifier_5'}
+dataset_names={'All Datasets':'*','Human Label':'dataset1','Current Transcripter':'dataset2','Beam':'dataset3','Greedy':'dataset4'}
+classifier_names={'All Classifier':'*','Hello':'classifier_1','Intro':'classifier_2','Pitch':'classifier_3','Yes/No with Age Data':'classifier_4','Yes/No without Age Data':'classifier_5'}

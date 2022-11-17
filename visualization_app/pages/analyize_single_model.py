@@ -9,8 +9,8 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from ai_tools.constant import DATADIR,classifiers_meta,dataset_names,classifier_names
-from components import *
+from ai_tools.constant import *
+from ai_tools.components import *
 
 
 #Top Menu     
@@ -19,12 +19,17 @@ sidebar=st.sidebar
 with sidebar:
     dataset = sidebar.selectbox(
         "Select a Dataset From List",
-        dataset_names
+        dataset_names,index=1
     )
     classifer = sidebar.selectbox(
         "Select a Classifier From List",
-        classifier_names
+        classifier_names,index=1
     )
+
+if dataset=='All Datasets' or classifer=='All Classifier':
+    dataset='Human Label'
+    classifer='Hello'
+
 model_name='tinybert_report'
 #path of file having classifier report
 file_path='{}/{}/{}_{}_report.json'.format(DATADIR,model_name,dataset_names[dataset],classifier_names[classifer])
