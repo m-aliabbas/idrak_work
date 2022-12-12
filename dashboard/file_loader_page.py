@@ -23,14 +23,21 @@ class FileLoader:
         st.subheader('Load the files')
         st.success('By Loading the files (one can load multiple files), it  will remove the blank lines'
                  ', fix the columns, fix the headers, and save the file in data folder')
-    # ============================================
-    # loading the file
+    # ------------------------- Loading File ---------------------------------
     def load_files(self):
+        '''
+        Using Streamlit File Uploader
+        '''
         self.uploaded_file = st.file_uploader('Chose a csv file', type='csv', accept_multiple_files=True)
 
-    # ============================================
-    # displaying the file
+    # -------------------------  display the file ----------------------------
     def show_files(self):
+        '''
+        
+        Get the list of files
+        read the dataframe from CSV one by one
+        
+        '''
         st.markdown('***')
         for f in self.uploaded_file:
             with st.expander(f.name):
@@ -62,5 +69,5 @@ class FileLoader:
 
 # ============================================
 def main():
-    obj = C_load_page()
+    obj = FileLoader()
     obj.Run()
