@@ -44,7 +44,7 @@ with footer:
 
     c1,c2,c3,c4,c5,c6,c7 = st.columns(7)
     with c1:
-        btn_folder = st.button('Load & FIx')
+        btn_folder = st.button('Load & Spectate File')
         if btn_folder:
             # obj.setTitle('Load the File')
             obj.move_to_page(0)

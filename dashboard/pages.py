@@ -25,7 +25,7 @@ class Pages:
         '''
         
         # number of total pages added
-        self.total_pages = 0
+        self.total_page = 0
         # an array of pages 
         self.page = []
         # session variable which will keep track of current visible page
@@ -57,7 +57,7 @@ class Pages:
         '''
         
         self.total_page += 1
-        self.pages.append(page)
+        self.page.append(page)
     
     #----------------------------- Function to add Page ----------------------
     #
@@ -74,7 +74,7 @@ class Pages:
         '''
         
         self.total_page -= 1
-        self.pages.remove(page)
+        self.page.remove(page)
 
     #------------------------ Function to Move Next Page ---------------------
     #
@@ -151,4 +151,4 @@ class Pages:
         This function will show page into layout
         '''
         with self.body:
-            self.pages[st.session_state.current_page]()
+            self.page[st.session_state.current_page]()
