@@ -74,7 +74,6 @@ class IdrakTextCleaner():
     return text
   def cleaner(self):
     self.df_wanted=self.df
-    print(type(len(self.column_to_keep)),type(0))
     # if len(self.column_to_keep)>0:
     self.df_wanted=self.df_wanted[self.column_to_keep]
     self.df_wanted[self.new_label_col]=self.df_wanted[self.label_col]
