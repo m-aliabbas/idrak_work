@@ -38,7 +38,7 @@ class FileLoader:
         st.info(' In this panel you can take a look on your Excel Sheet or CSV\
                 and get an idea about which sheets/columns to Use.')
         # print('Session state of is_true',st.session_state.is_cleaned)
-        
+        print('Session Df',st.session_state.df)
     # ------------------------- Loading File ---------------------------------
     #
     def load_file(self):
@@ -106,6 +106,10 @@ class FileLoader:
     #--------------------------- Save Dataframe ------------------------------
     #
     
+    def convert_df(self):
+        # IMPORTANT: Cache the conversion to prevent computation on every rerun
+        return st.session_state.df.to_csv()
+        
     
     # -------------------------  display the file ----------------------------
     #
@@ -139,17 +143,33 @@ class FileLoader:
                 else:
                     pass
                 st.session_state.df=self.df
-                self.show_selection_menu(file_type)
-                st.button('Clean', key='clean_btn',on_click=self.cleaner)
+                alread_cleaned = st.checkbox('Is the Dataset Already Cleaned? :')
+                if not alread_cleaned:
+                    self.show_selection_menu(file_type)
+                    st.button('Clean', key='clean_btn',on_click=self.cleaner)
+                else:
+                    st.session_state.is_cleaned = True
+                    
         
         
         self.container=st.empty()
         self.show_df()
-        if st.session_state.is_cleaned:
-            st.button('Save & Download', key='save_btn',on_click=self.save_df)
+        if st.session_state.is_cleaned and st.session_state.df is not None:
+            file_name=st.text_input(label = "Please Enter Save File_Name: ",)
+            csv=self.convert_df()
+            if file_name:
+               file_name='data/idrakdashboard_{}.csv'.format(file_name)
+               if not os.path.exists('data'):
+                      os.mkdir('data')
+               st.download_button(
+                    label="Download data as CSV",
+                    data=csv,
+                    file_name=file_name,
+                    mime='text/csv',
+                )
         
     # ------------------------------------------------------------------------
-    # 
+    #
     def Run(self):
         '''
         Driver function
