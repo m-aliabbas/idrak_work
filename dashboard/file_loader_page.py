@@ -38,7 +38,7 @@ class FileLoader:
         st.info(' In this panel you can take a look on your Excel Sheet or CSV\
                 and get an idea about which sheets/columns to Use.')
         # print('Session state of is_true',st.session_state.is_cleaned)
-        print('Session Df',st.session_state.df)
+        # print('Session Df',st.session_state.df)
     # ------------------------- Loading File ---------------------------------
     #
     def load_file(self):
@@ -84,12 +84,12 @@ class FileLoader:
     def cleaner(self):
         try:
             itc=IdrakTextCleaner(file_path=self.uploaded_file,
-                                 column_to_keep=self.selected_columns,
-                                 sheet_list=self.selected_sheets,
-                                 save_file_path='temp.csv',selected_class=[],
-                                 label_col=self.label_column,
-                                 wanted_text_col=self.text_column,
-                                 new_text_col='cleaned_text')
+                                    column_to_keep=self.selected_columns,
+                                    sheet_list=self.selected_sheets,
+                                    save_file_path='temp.csv',selected_class=[],
+                                    label_col=self.label_column,
+                                    wanted_text_col=self.text_column,
+                                    new_text_col='cleaned_text')
             self.df=itc.df_wanted
             self.is_cleaned=True
             st.session_state.is_cleaned = True
@@ -108,9 +108,20 @@ class FileLoader:
     
     def convert_df(self):
         # IMPORTANT: Cache the conversion to prevent computation on every rerun
-        return st.session_state.df.to_csv()
+        return st.session_state.df.to_csv(index=False)
         
-    
+    # ----------------------- Column Selection Menu -------------------------
+    #
+    def show_column_selection_menu(self):
+       
+        columns_names1=list(st.session_state.df.columns)
+        print(columns_names1)
+        selected_columns1 = st.multiselect(
+                    'Please Select the Columns You Want to Includes?',
+                    columns_names1,
+                    columns_names1
+                    )
+        st.session_state['df']=st.session_state.df[columns_names1]
     # -------------------------  display the file ----------------------------
     #
     def show_file(self):
@@ -155,6 +166,7 @@ class FileLoader:
         self.container=st.empty()
         self.show_df()
         if st.session_state.is_cleaned and st.session_state.df is not None:
+            
             file_name=st.text_input(label = "Please Enter Save File_Name: ",)
             csv=self.convert_df()
             if file_name:

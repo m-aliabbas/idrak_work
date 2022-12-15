@@ -37,7 +37,7 @@ with footer:
     s = f"""
     <style>
     div.stButton > button:first-child {{ border: 1px solid {primaryColor}; border-radius:20px 20px 20px 20px;
-    height: 3em;width: 8em;font:12px "Helvet";}}
+    height: 3em;width: 24em;font:12px "Helvet";}}
     <style>
     """
     st.markdown(s, unsafe_allow_html=True)
@@ -48,7 +48,7 @@ with footer:
         if btn_folder:
             # obj.setTitle('Load the File')
             obj.move_to_page(0)
-
+    
 
 # #--------------------------- Rendering Main --------------------------------
 # 

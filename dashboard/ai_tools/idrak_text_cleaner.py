@@ -49,7 +49,8 @@ class IdrakTextCleaner():
     self.shuffle()
     self.save_csv()
   def read_csv(self):
-    self.df=pd.read_csv(self.file_path)
+    self.file_path.seek(0)
+    self.df=pd.read_csv(self.file_path,low_memory=False)
   def read_excel(self):
     dfs=[]
     for sheet_name in self.n_sheets:
@@ -74,7 +75,8 @@ class IdrakTextCleaner():
     return text
   def cleaner(self):
     self.df_wanted=self.df
-    # if len(self.column_to_keep)>0:
+    
+
     self.df_wanted=self.df_wanted[self.column_to_keep]
     self.df_wanted[self.new_label_col]=self.df_wanted[self.label_col]
     self.df_wanted[self.wanted_text_col]=self.df_wanted[self.wanted_text_col]
@@ -85,9 +87,12 @@ class IdrakTextCleaner():
     self.df_wanted=self.df_wanted.drop_duplicates(keep='last')
     
     self.df_wanted[self.new_label_col]=self.df_wanted[self.new_label_col].astype(int)
-    self.df_wanted=self.df_wanted[self.df_wanted[self.new_label_col]!=12]
     
-    self.df_wanted=self.df_wanted.drop([self.wanted_text_col,self.label_col],axis=1)
+    self.df_wanted=self.df_wanted[self.df_wanted[self.new_label_col]!=12]
+    self.df_wanted[self.label_col]=self.df_wanted[self.new_label_col]
+    self.df_wanted[self.wanted_text_col]=self.df_wanted[self.new_text_col]
+    
+    # self.df_wanted=self.df_wanted.drop([self.wanted_text_col,self.label_col],axis=1)
     
   def selector(self):
     '''
