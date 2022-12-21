@@ -57,3 +57,11 @@ dashboard/tinybert_results1/multiclass_test_report.json
 dashboard/tinybert_results1/multiclass_test21_history.csv
 dashboard/tinybert_results1/multiclass_test21_invalid_predictions.csv
 dashboard/tinybert_results1/multiclass_test21_report.json
+dashboard/__pycache__/merge.cpython-310.pyc
+dashboard/__pycache__/split.cpython-310.pyc
+dashboard/data/merge.csv
+dashboard/data/merge1.csv
+dashboard/ai_tools/__pycache__/idrak_text_cleaner.cpython-310.pyc
+dashboard/ai_tools/__pycache__/idrak_text_cleaner.cpython-310.pyc
+.gitignore
+.gitignore

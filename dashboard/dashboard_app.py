@@ -2,7 +2,9 @@
 #
 import fix_columns as fixcols
 import file_loader_page as load_page
+import split 
 import show_stats
+import merge 
 import pages as p
 import streamlit as st
 
@@ -34,6 +36,8 @@ st.session_state.flag = 1
 obj.add_page(load_page.main)
 obj.add_page(show_stats.main)
 obj.add_page(fixcols.main)
+obj.add_page(split.main)
+obj.add_page(merge.main)
 
 with footer:
     primaryColor = st.get_option("theme.primaryColor")
@@ -61,6 +65,16 @@ with footer:
         if btn_folder:
             # obj.setTitle('Load the File')
             obj.move_to_page(2)
+    with c4:
+        btn_folder = st.button('Split')
+        if btn_folder:
+            # obj.setTitle('Load the File')
+            obj.move_to_page(3)
+    with c5:
+        btn_folder = st.button('Merge')
+        if btn_folder:
+            # obj.setTitle('Load the File')
+            obj.move_to_page(4)
 # #--------------------------- Rendering Main --------------------------------
 # 
 with main:
