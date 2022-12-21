@@ -89,6 +89,7 @@ class IdrakTextCleaner():
     self.df_wanted[self.new_label_col]=self.df_wanted[self.new_label_col].astype(int)
     
     self.df_wanted=self.df_wanted[self.df_wanted[self.new_label_col]!=12]
+
     self.df_wanted[self.label_col]=self.df_wanted[self.new_label_col]
     self.df_wanted[self.wanted_text_col]=self.df_wanted[self.new_text_col]
     
@@ -112,4 +113,5 @@ class IdrakTextCleaner():
     self.df_wanted[self.new_label_col]= label_encoder.fit_transform(self.df_wanted['class_labels'])
   def number_to_label(self):
     self.df_wanted['class_labels']=self.df_wanted[self.new_label_col].map(self.label_class_mapping).fillna('X')
+    self.df_wanted=self.df_wanted[self.df_wanted['class_labels']!='X']
 
