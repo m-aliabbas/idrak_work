@@ -2,6 +2,7 @@
 #
 import fix_columns as fixcols
 import file_loader_page as load_page
+import analayze
 import split 
 import show_stats
 import merge 
@@ -38,6 +39,7 @@ obj.add_page(show_stats.main)
 obj.add_page(fixcols.main)
 obj.add_page(split.main)
 obj.add_page(merge.main)
+obj.add_page(analayze.main)
 
 with footer:
     primaryColor = st.get_option("theme.primaryColor")
@@ -75,6 +77,11 @@ with footer:
         if btn_folder:
             # obj.setTitle('Load the File')
             obj.move_to_page(4)
+    with c6:
+        btn_folder = st.button('Analayze')
+        if btn_folder:
+            # obj.setTitle('Load the File')
+            obj.move_to_page(5)
 # #--------------------------- Rendering Main --------------------------------
 # 
 with main:

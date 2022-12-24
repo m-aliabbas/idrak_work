@@ -5,7 +5,8 @@ import pandas as pd
 import numpy as np
 
 from tqdm.auto import tqdm
-
+import uuid
+import glob
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
@@ -283,6 +284,7 @@ class CallCenterTagger(pl.LightningModule):
         #------------ making bert tokenizer from hugging face repo----------------
         #
         self.bert = BertModel.from_pretrained(model_path, return_dict=True)
+        print('Number of classes,',n_classes)
         self.classifier = nn.Linear(self.bert.config.hidden_size, n_classes)
         self.softmax = nn.Softmax(dim=1)
 
@@ -297,9 +299,9 @@ class CallCenterTagger(pl.LightningModule):
         #------------------ metrics ---------------------------------------------
         #
         task="multiclass"
-        if n_classes<=2:
-            task='binary'
-        print(task,n_classes)
+        # if n_classes<=2:
+        #     task='binary'
+        
         self.train_f1 = F1Score(num_classes=n_classes,average="micro",task=task)
         self.train_acc=Accuracy(task=task,num_classes=n_classes)
         self.val_f1=F1Score(num_classes=n_classes,average="micro",task=task)
@@ -656,7 +658,9 @@ class IdrakTinyBertClassifier:
         self.df_train_org=pd.read_csv(datapath+'_train.csv')
         self.df_train=pd.read_csv(datapath+'_train_aug.csv')
         self.df_test=pd.read_csv(datapath+'_test.csv')
-
+        
+        #self_labels
+        
         #droping na
         self.df_train.dropna(inplace=True)
         self.df_test.dropna(inplace=True)
@@ -669,8 +673,11 @@ class IdrakTinyBertClassifier:
         self.column_name=self.df_train['class_labels'].unique()
 
         #path of log directory
-        self.log_dir = "lightning_logs/IDRAK/version_0"
-
+        self.log_dir_name=self.my_random_string(6)
+        self.log_dir=f'lightning_logs/{self.log_dir_name}'
+        if not os.path.exists(f'lightning_logs/{self.log_dir_name}'):
+            os.mkdir(f'lightning_logs/{self.log_dir_name}')
+        self.log_dir=f'lightning_logs/{self.log_dir_name}'
         #initalizing various parameters
         self.drive_folder=drive_folder
         self.learning_rate=learning_rate
@@ -690,7 +697,8 @@ class IdrakTinyBertClassifier:
         self.num_warmup_steps=0
         self.BATCH_SIZE=batch_size
         self.df_model_history=pd.DataFrame()
-
+        self.label_df=pd.DataFrame()
+        
         #downloading tokenizer
         self.barow()
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
@@ -725,13 +733,14 @@ class IdrakTinyBertClassifier:
                                         learning_rate=self.learning_rate)
 
         self.save_model_name=''
-
+        
+            
         #--------------------------------Defining callbacks-----------------------
         #
         #for saving check points we are only saving the best based on val_loss 
         self.checkpoint_callback = ModelCheckpoint(dirpath="checkpoints",filename=self.checkpoint_name,save_top_k=2,verbose=True,monitor="val_loss",mode="min")
         #call back for logging
-        self.logger = TensorBoardLogger("lightning_logs", name="IDRAK")
+        self.logger = TensorBoardLogger("lightning_logs", name=self.log_dir_name)
         #call back for earlystoping if no imporvement in model in 7 epochs
         self.early_stopping_callback = EarlyStopping(monitor='val_loss', patience=7)
 
@@ -746,12 +755,33 @@ class IdrakTinyBertClassifier:
         self.dm=dm=MyModule(test_df=self.df_test,tokenizer=self.tokenizer,batch_size=1,max_token_len=self.MAX_TOKEN_COUNT)
         #---------------------- driver-------------------------------------------
         #
+        self.make_label_df()
         self.train_model()
         self.eval_model()
         self.record_history()
         self.invalid_predictions()
         self.make_report()
+    #---------------------------- random string ------------------------------
+    #
+    def my_random_string(self,string_length=10):
+        '''
+        Returns a random string of length string_length.
+        '''
+        random = str(uuid.uuid4()) # Convert UUID format to a Python string.
+        random = random.upper() # Make all characters uppercase.
+        random = random.replace("-","") # Remove the UUID '-'.
+        return random[0:string_length] # Return the random string.
 
+    #--------------------- make label df -------------------------------------
+    #
+    def make_label_df(self):
+        '''
+        Map the Human and Machie Label for the dataset
+        '''
+        df = self.df_train
+        label_dict={ df['class'].unique()[i]:df['class_labels'].unique()[i] for i in range(len(df['class_labels'].unique()))}
+        self.label_df=pd.DataFrame().from_dict(label_dict,orient ='index')
+        
     #----------------------------- borrow function ---------------------------
     #
     def barow(self):
@@ -847,6 +877,7 @@ class IdrakTinyBertClassifier:
         self.invalid_predictions()
         self.make_report()
         
+        print('Congrats!..... Everything Goes Successful')
         
     #--------------------- Running Evaluation COde----------------------------
     #
@@ -892,8 +923,10 @@ class IdrakTinyBertClassifier:
         each epochs (specified steps) 
         It uses TensorBoard
         '''
+        list_of_version=glob.glob(f'{self.log_dir}/*')
+        latest_version = max(list_of_version, key=os.path.getctime)
         #reading 
-        self.event_accumulator =EventAccumulator(self.log_dir)
+        self.event_accumulator =EventAccumulator(latest_version)
         self.event_accumulator.Reload()
         
         events1 =  self.event_accumulator.Scalars('epoch_train_accuracy')
@@ -904,12 +937,12 @@ class IdrakTinyBertClassifier:
         events6 =  self.event_accumulator.Scalars('epoch_val_f1')
         
         x = [x.step for x in events1]
-        y = [x.value for x in events1]
-        z = [x.value for x in events2]
-        a = [x.value for x in events3]
-        b = [x.value for x in events4]
-        c = [x.value for x in events5]
-        d = [x.value for x in events6]
+        y = [x1.value for x1 in events1]
+        z = [x2.value for x2 in events2]
+        a = [x3.value for x3 in events3]
+        b = [x4.value for x4 in events4]
+        c = [x5.value for x5 in events5]
+        d = [x6.value for x6 in events6]
         #making dataframe
         self.df_model_history = pd.DataFrame({"step": x, "train_acc": y,'valid_acc':z,'train_f1':a,'valid_f1':b,'train_loss':c,'valid_losss':d})
     #----------------- Recording invalid Predictions--------------------------
@@ -931,17 +964,21 @@ class IdrakTinyBertClassifier:
         self.model_report=pd.DataFrame([self.scores])
         self.model_report.to_json(self.model_name+'_report.json')
         self.df_model_history.to_csv(self.model_name+'_history.csv')
+        self.label_df.to_json(self.model_name+'_class_labels.json')
         invld_pre_copy=self.model_name+'_invalid_predictions.csv'
         report_copy=self.model_name+'_report.json'
         history_copy=self.model_name+'_history.csv'
-        model_checkpoint_name="/content/checkpoints/{}.ckpt".format(self.checkpoint_name)
+        label_copy=self.model_name+'_class_labels.json'
+        
+        # model_checkpoint_name="/content/checkpoints/{}.ckpt".format(self.checkpoint_name)
         try:
             #---------------- Coping the Data---------------------------------
             #
-            os.popen('cp {} {}'.format(model_checkpoint_name,self.drive_folder))
+            # os.popen('cp {} {}'.format(model_checkpoint_name,self.drive_folder))
             os.popen('cp {} {}'.format(invld_pre_copy,self.drive_folder))
             os.popen('cp {} {}'.format(report_copy,self.drive_folder))
             os.popen('cp {} {}'.format(history_copy,self.drive_folder))
+            os.popen('cp {} {}'.format(label_copy,self.drive_folder))
         except Exception as e:
             print(e)
             
