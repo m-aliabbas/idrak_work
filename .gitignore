@@ -139,3 +139,8 @@ dashboard/tinybert_results1/training_demo_class_labels.json
 dashboard/tinybert_results1/training_demo_history.csv
 dashboard/tinybert_results1/training_demo_invalid_predictions.csv
 dashboard/tinybert_results1/training_demo_report.json
+.ipynb_checkpoints/inference_check-checkpoint.ipynb
+dashboard/__pycache__/evaluate.cpython-310.pyc
+dashboard/ai_tools/__pycache__/inference_logistics.cpython-310.pyc
+inference_check.ipynb
+test_strings.csv

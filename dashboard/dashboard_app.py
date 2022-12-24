@@ -7,6 +7,7 @@ import split
 import show_stats
 import merge 
 import pages as p
+import evaluate
 import streamlit as st
 
 # #--------------------------Basic Page Config--------------------------------
@@ -40,7 +41,7 @@ obj.add_page(fixcols.main)
 obj.add_page(split.main)
 obj.add_page(merge.main)
 obj.add_page(analayze.main)
-
+obj.add_page(evaluate.main)
 with footer:
     primaryColor = st.get_option("theme.primaryColor")
     s = f"""
@@ -82,6 +83,11 @@ with footer:
         if btn_folder:
             # obj.setTitle('Load the File')
             obj.move_to_page(5)
+    with c7:
+        btn_folder = st.button('Evaluate')
+        if btn_folder:
+            # obj.setTitle('Load the File')
+            obj.move_to_page(6)
 # #--------------------------- Rendering Main --------------------------------
 # 
 with main:
