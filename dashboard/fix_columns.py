@@ -368,7 +368,7 @@ class FixColumn:
                 test_csv=self.convert_df(st.session_state.test_df)
                 if file_name:
                     self.make_dir(dir_name=file_name) # create a dir inside conents
-                    
+                    print(f'{file_name} created')
                     file_name1='{}_train.csv'.format(file_name)
                     
                     self.save_df(df=st.session_state.train_df,dir_name=file_name,
