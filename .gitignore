@@ -144,3 +144,8 @@ dashboard/__pycache__/evaluate.cpython-310.pyc
 dashboard/ai_tools/__pycache__/inference_logistics.cpython-310.pyc
 inference_check.ipynb
 test_strings.csv
+dashboard/checkpoints/
+dashboard/lightning_logs/
+dashboard/tinybert_results1
+dashboard/contents/
+dashboard/temp.csv.csv

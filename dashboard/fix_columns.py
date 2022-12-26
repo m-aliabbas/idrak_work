@@ -234,6 +234,25 @@ class FixColumn:
         # IMPORTANT: Cache the conversion to prevent computation on every rerun
         return df.to_csv(index=False)
     
+    #-------------------------- make directory in contents -------------------
+    #
+    def make_dir(self,dir_name):
+        dir_path = f'contents/data/{dir_name}/'
+        
+        if not os.path.exists(dir_path):
+            os.mkdir(dir_path)
+        
+    #-------------------------------Save file to Contents/data ---------------
+    #
+    
+    def save_df(self,df,dir_name,file_name):
+        '''
+        Save the dataframe to contents/data for AI Training
+        '''
+        dir_path = f'contents/data/{dir_name}/'
+        file_path= dir_path+file_name
+        df.to_csv(file_path,index=False)
+        
     # ----------------------- Column Selection Menu -------------------------
     #
     def show_column_selection_menu(self):
@@ -348,7 +367,12 @@ class FixColumn:
                 train_aug_csv=self.convert_df(st.session_state.train_aug_df)
                 test_csv=self.convert_df(st.session_state.test_df)
                 if file_name:
+                    self.make_dir(dir_name=file_name) # create a dir inside conents
+                    
                     file_name1='{}_train.csv'.format(file_name)
+                    
+                    self.save_df(df=st.session_state.train_df,dir_name=file_name,
+                                 file_name=file_name1)
                     st.download_button(
                             label="Download training CSV",
                             data=train_csv,
@@ -356,6 +380,8 @@ class FixColumn:
                             mime='text/csv',
                         )
                     file_name1='{}_train_aug.csv'.format(file_name)
+                    self.save_df(df=st.session_state.train_aug_df,dir_name=file_name,
+                                 file_name=file_name1)
                     st.download_button(
                             label="Download Augmented CSV",
                             data=train_aug_csv,
@@ -363,6 +389,8 @@ class FixColumn:
                             mime='text/csv',
                         )
                     file_name1='{}_test.csv'.format(file_name)
+                    self.save_df(df=st.session_state.test_df,dir_name=file_name,
+                                 file_name=file_name1)
                     st.download_button(
                             label="Download test CSV",
                             data=test_csv,

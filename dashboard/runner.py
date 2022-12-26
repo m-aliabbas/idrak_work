@@ -1,6 +1,7 @@
 import argparse
 from termcolor import colored
 from pyfiglet import figlet_format
+import os
 
 print((colored(figlet_format("Welcome to Idrak Bert Trainer"), color="green")))
 
@@ -60,6 +61,6 @@ except Exception as e:
 
 
 if runner_ready:
-    
+    print(datapath)
     itbc=IdrakTinyBertClassifier(datapath,num_epochs=n_epochs,learning_rate=lr,model_name=model_name,checkpoint_name=checkpoint_name)
 
