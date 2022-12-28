@@ -52,7 +52,7 @@ class WhisperTranscriptorAPI:
     #--------------------------- convert mp3 to wav ---------------------------
     #
 
-    def save_fn(self,filepath=''):
+    def convert_to_wav(self,filepath=''):
         '''
 
         If file is mp3 first convert it to wav.
@@ -105,7 +105,7 @@ class WhisperTranscriptorAPI:
         self.audio_path = audio_path
         exten = os.path.splitext(self.audio_path)[1]
         if exten == '.mp3':
-            self.audio_path = self.save_fn(self.audio_path)
+            self.audio_path = self.convert_to_wav(self.audio_path)
         wave,fs=torchaudio.load(self.audio_path)
         #tensor to numpy
         wave=wave.numpy()
