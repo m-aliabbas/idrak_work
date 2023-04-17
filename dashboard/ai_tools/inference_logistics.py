@@ -78,7 +78,7 @@ class IdrakTinyBertInference:
         predicted class, probibilities and class labels using trianed pytorch model
         '''
         self.text=text
-        print(self.text)
+        # print(self.text)
         prediction=self.prep_data()
         prediction=prediction[1].cpu().detach().numpy()
         y_pred=prediction[0].argmax()
@@ -114,3 +114,6 @@ class IdrakTinyBertInference:
     def __str__(self):
         return 'IdrakTinyBertInference Trained over {}'.format(self.checkpoint_path)
 
+
+
+IdrakTinyBertInference(checkpoint_path=self.uploaded_checkpoint_file,df_label_path=self.uploaded_label_file)

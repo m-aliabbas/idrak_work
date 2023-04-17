@@ -283,7 +283,16 @@ class CallCenterTagger(pl.LightningModule):
 
         #------------ making bert tokenizer from hugging face repo----------------
         #
-        self.bert = BertModel.from_pretrained(model_path, return_dict=True)
+        try:
+            model_path1='tiny_bert_pretrained'
+            self.bert = BertModel.from_pretrained(model_path1, return_dict=True)
+            print('Loaded from Pretrained Localy')
+        except:
+            model_path = 'prajjwal1/bert-tiny'
+            self.bert = BertModel.from_pretrained(model_path, return_dict=True)
+            self.bert.save_pretrained(model_path1)
+            print('Downloaded form Hugging face and Saved for Future used Localy.')
+            
         print('Number of classes,',n_classes)
         self.classifier = nn.Linear(self.bert.config.hidden_size, n_classes)
         self.softmax = nn.Softmax(dim=1)
